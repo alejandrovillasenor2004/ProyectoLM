@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanBlog - Reggaeton</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>UrbanBlog</h1>
+        <p>Las últimas noticias del género urbano</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reggaeton.html">Reggaeton</a>
+        <a href="trap.html">Trap</a>
+        <a href="drill.html">Drill</a>
+        <a href="entrevistas.html">Entrevistas</a>
+    </nav>
+
+    <main>
+        <h2 class="titulo-seccion">Reggaeton</h2>
+
+        <article class="noticia">
+            <h2>J Balvin presenta su gira mundial para 2025</h2>
+            <p class="fecha">18 de abril de 2025</p>
+            <p>El colombiano ha anunciado más de 40 fechas en Europa y América. Madrid y Barcelona están confirmadas entre las ciudades españolas.</p>
+           <br>
+           <img src="fotos/jbalvin.jpg" alt="Foto de J Balvin">
+           <br>
+           <br>
+            <button onclick="mostrarMas('r1')">Leer más</button>
+            <p id="r1" class="oculto">Las entradas saldrán a la venta el próximo mes. Los precios arrancarán desde los 45 euros para pista general. Se espera que sea una de las giras más grandes de su carrera.</p>
+        </article>
+
+        <article class="noticia">
+            <h2>Daddy Yankee: así suena el reggaeton de sus inicios</h2>
+            <p class="fecha">12 de abril de 2025</p>
+            <p>Un documental repasa la historia del género desde sus orígenes en Puerto Rico hasta convertirse en uno de los estilos más escuchados del mundo.</p>
+            <br>
+            <img src="fotos/daddy-yankee-press-photo-NEW-2019-cr-Cartel-Records-billboard-1548.webp" alt="Foto de Daddy Yankee">
+            <br>
+            <br>
+            <button onclick="mostrarMas('r2')">Leer más</button>
+            <p id="r2" class="oculto">El documental se estrena en plataformas digitales el próximo viernes. Incluye entrevistas inéditas con los pioneros del género y imágenes de archivo nunca vistas.</p>
+        </article>
+
+        <article class="noticia">
+            <h2>Rauw Alejandro lidera las listas con su nuevo sencillo</h2>
+            <p class="fecha">3 de abril de 2025</p>
+            <p>El puertorriqueño sigue en racha. Su nuevo tema lleva tres semanas consecutivas en el número uno de Spotify en España y Latinoamérica.</p>
+            <br>
+            <img src="fotos/raw-alejandro.webp" alt="Foto de Rauw Alejandro">
+            <br>
+            <br>
+            <button onclick="mostrarMas('r3')">Leer más</button>
+            <p id="r3" class="oculto">La canción mezcla reggaeton con sonidos futuristas, una línea que el artista lleva explorando desde su álbum anterior. Ya supera los 80 millones de reproducciones en total.</p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>© 2025 UrbanBlog - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

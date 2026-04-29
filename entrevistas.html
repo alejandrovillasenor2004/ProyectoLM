@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanBlog - Entrevistas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>UrbanBlog</h1>
+        <p>Las últimas noticias del género urbano</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reggaeton.html">Reggaeton</a>
+        <a href="trap.html">Trap</a>
+        <a href="drill.html">Drill</a>
+        <a href="entrevistas.html">Entrevistas</a>
+    </nav>
+
+    <main>
+        <h2 class="titulo-seccion">Entrevistas</h2>
+
+        <article class="noticia">
+            <h2>"La música urbana española tiene mucho que decir" — Entrevista a productor nacional</h2>
+            <p class="fecha">19 de abril de 2025</p>
+            <p>Hablamos con uno de los productores más activos de la escena española. Nos cuenta cómo es el proceso de
+                crear un beat, cómo trabaja con los artistas y hacia dónde cree que va el género.</p>
+            <button onclick="mostrarMas('e1')">Leer más</button>
+            <p id="e1" class="oculto">"Antes teníamos que imitar lo que venía de fuera. Ahora los artistas de aquí
+                marcan tendencia ellos solos. Hay un talento enorme y las plataformas han dado igualdad de oportunidades
+                a todos", nos explica durante la charla.</p>
+        </article>
+
+        <article class="noticia">
+            <h2>"Empecé haciendo beats en el salón de mi casa" — Productor emergente</h2>
+            <p class="fecha">13 de abril de 2025</p>
+            <p>Un joven productor de 22 años nos cuenta su historia: cómo pasó de subir instrumentales a YouTube a
+                trabajar con artistas con millones de oyentes en solo dos años.</p>
+            <button onclick="mostrarMas('e2')">Leer más</button>
+            <p id="e2" class="oculto">"Lo más importante es ser constante y no copiar a nadie. Al principio todos
+                imitamos a nuestros referentes, pero tienes que encontrar tu propio sonido. Eso es lo que te hace
+                destacar", afirma con seguridad.</p>
+        </article>
+
+        <article class="noticia">
+            <h2>"El directo es donde de verdad se demuestra si un artista vale" — Manager de artistas urbanos</h2>
+            <p class="fecha">6 de abril de 2025</p>
+            <p>Entrevistamos a una manager con más de diez años en la industria musical urbana. Nos da su visión sobre
+                cómo ha cambiado el negocio con la llegada del streaming y las redes sociales.</p>
+            <button onclick="mostrarMas('e3')">Leer más</button>
+            <p id="e3" class="oculto">"Antes necesitabas una discográfica para existir. Hoy un artista puede llegar a
+                millones de personas desde su habitación. Pero eso también significa más competencia. Lo que nunca
+                cambia es que el directo es la prueba real del artista."</p>
+        </article>
+        
+        <!-- FORMULARIO DE PREGUNTAS -->
+        <section class="noticia">
+            <h2>¿Tienes una pregunta para los artistas?</h2>
+            <p>Mándanos tu pregunta y la incluiremos en la próxima entrevista.</p>
+
+            <form id="formulario-preguntas">
+
+                <label for="nombre">Tu nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Carlos García" maxlength="50" required>
+
+                <label for="email">Tu email:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+                <label for="artista">¿A qué artista va dirigida?</label>
+                <select id="artista" name="artista" required>
+                    <option value="">-- Selecciona un artista --</option>
+                    <option value="badbunny">Bad Bunny</option>
+                    <option value="quevedo">Quevedo</option>
+                    <option value="bizarrap">Bizarrap</option>
+                    <option value="centralcee">Central Cee</option>
+                    <option value="rauw">Rauw Alejandro</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="pregunta">Tu pregunta:</label>
+                <textarea id="pregunta" name="pregunta" placeholder="Escribe aquí tu pregunta..." maxlength="300"
+                    required></textarea>
+                <!-- Contador de caracteres actualizado con JS -->
+                <p id="contador-chars">0/300 caracteres</p>
+
+                <button type="button" onclick="enviarFormulario()">Enviar pregunta</button>
+
+            </form>
+
+            <!-- Mensaje de confirmación, oculto por defecto -->
+            <p id="confirmacion-envio" class="oculto">✓ ¡Gracias! Tu pregunta ha sido enviada correctamente.</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 UrbanBlog - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

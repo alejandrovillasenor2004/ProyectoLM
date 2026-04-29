@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanBlog - Drill</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>UrbanBlog</h1>
+        <p>Las últimas noticias del género urbano</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reggaeton.html">Reggaeton</a>
+        <a href="trap.html">Trap</a>
+        <a href="drill.html">Drill</a>
+        <a href="entrevistas.html">Entrevistas</a>
+    </nav>
+
+    <main>
+        <h2 class="titulo-seccion">Drill</h2>
+
+        <article class="noticia">
+            <h2>El drill español despega: artistas que debes conocer</h2>
+            <p class="fecha">16 de abril de 2025</p>
+            <p>El drill, nacido en Chicago y popularizado en Londres, tiene ya una escena española muy activa. Artistas de Madrid y Barcelona están creando un sonido propio dentro del género.</p>
+            <br>
+            <img src="fotos/kg970.jpg" alt="Drill español">
+            <br>
+            <br>
+            <button onclick="mostrarMas('d1')">Leer más</button>
+            <p id="d1" class="oculto">Nombres como Neo Pistea o Recycled J han abierto el camino. Ahora una nueva generación llega con propuestas más oscuras y letras más directas, muy influenciadas por la escena británica.</p>
+        </article>
+
+        <article class="noticia">
+            <h2>Pop Smoke sigue presente: su legado tres años después</h2>
+            <p class="fecha">9 de abril de 2025</p>
+            <p>El artista neoyorquino que popularizó el Brooklyn drill sigue siendo una referencia para toda una generación. Su música no ha dejado de sonar desde su fallecimiento.</p>
+           <br>
+            <img src="fotos/pop-smoke.jpg" alt="Foto de Pop Smoke">
+           <br>
+           <br>
+            <button onclick="mostrarMas('d2')">Leer más</button>
+            <p id="d2" class="oculto">Su discográfica ha anunciado una edición especial de su álbum debut con temas inéditos. Además, varios artistas actuales han declarado en entrevistas que Pop Smoke es su mayor influencia.</p>
+        </article>
+
+        <article class="noticia">
+            <h2>Central Cee: el drill británico en lo más alto</h2>
+            <p class="fecha">2 de abril de 2025</p>
+            <p>El rapero londinense es actualmente uno de los artistas de drill más escuchados del mundo. Su mezcla de melodía y letras duras ha conectado con millones de oyentes en todo el planeta.</p>
+           <br>
+            <img src="fotos/centralcee.webp" alt="Foto de Pop Smoke">
+            <br>
+            <br>
+            <button onclick="mostrarMas('d3')">Leer más</button>
+            <p id="d3" class="oculto">Central Cee actuará en varios festivales europeos este verano, incluido uno en España. Su colaboración con Drake el año pasado le dio una proyección internacional que pocos artistas del género han logrado.</p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>© 2025 UrbanBlog - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
